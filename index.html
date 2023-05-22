@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="nav-link">Home</li>
+          <li class="nav-link">Features</li>
+          <li class="nav-link">Process</li>
+          <li class="nav-link">Discover</li>
+          <button class="btn nav-link">Sign Up</button>
+        </ul>
+        <div class="top-nav">
+          <h2 class="nav-logo">Property.</h2>
+          <i class="bi bi-list menu" onclick="openNav()"></i>
+        </div>
+      </nav>
+      <div class="intro-section">
+        <h1 class="header-title">Buy and Sell your property in one place!</h1>
+        <p class="header-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          tempore.
+        </p>
+        <button class="intro-btn">View Our Listings</button>
+      </div>
+      <div class="dropdown">
+        <select id="buyOrSell">
+          <option value="buyOrSell">Looking For</option>
+          <option value="buyOrSell">Buy</option>
+          <option value="buyOrSell">Rent</option>
+        </select>
+        <p id="buyOrSellP"></p>
+        <select id="city">
+          <option value="buyOrSell">City</option>
+          <option value="buyOrSell">New York</option>
+          <option value="buyOrSell">Miami</option>
+        </select>
+        <p id="cityP"></p>
+        <select id="price">
+          <option value="buyOrSell">Price Limit</option>
+          <option value="buyOrSell">$50K - $100K</option>
+          <option value="buyOrSell">$100K - $150K</option>
+        </select>
+        <p id="priceP"></p>
+        <button>Search</button>
+      </div>
+    </header>
+
+    <section style="margin-top: 10rem">
+      <div class="property-intro">
+        <h2>Recently Added</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="property-section">
+        <div class="property1">
+          <img
+            class="property-img"
+            src="https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+          <p class="property-title">Property Name</p>
+          <div class="card-details">
+            <p class="gap">$150 000</p>
+            <p class="font-bg-light">6 beds | 4 baths | 3,200 sqft</p>
+          </div>
+        </div>
+        <div class="property2">
+          <img
+            class="property-img"
+            src="https://images.pexels.com/photos/1212053/pexels-photo-1212053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+          <p class="property-title">Property Name</p>
+          <div class="card-details">
+            <p class="gap">$150 000</p>
+            <p class="font-bg-light">6 beds | 4 baths | 3,200 sqft</p>
+          </div>
+        </div>
+        <div class="property3">
+          <img
+            class="property-img"
+            src="https://images.pexels.com/photos/2816323/pexels-photo-2816323.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <p class="property-title">Property Name</p>
+          <div class="card-details">
+            <p class="gap">$150 000</p>
+            <p class="font-bg-light">6 beds | 4 baths | 3,200 sqft</p>
+          </div>
+        </div>
+        <div class="property4">
+          <img
+            class="property-img"
+            src="https://images.pexels.com/photos/3094423/pexels-photo-3094423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+          <p class="property-title">Property Name</p>
+          <div class="card-details">
+            <p class="gap">$150 000</p>
+            <p class="font-bg-light">6 beds | 4 baths | 3,200 sqft</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="detail-section">
+        <div class="detail-title">
+          <h2>The Ins and Outs Of Setting a Price for Home</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, velit!
+          </p>
+        </div>
+        <div class="detail-img-vert">
+          <img
+            src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <div class="detail-img-hoz">
+          <img
+            src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="real-estate">
+        <div class="bg-yellow">
+          <h2>We provide you the simplest ways to invest in Real Estate</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            aliquam laboriosam modi, quas quod alias tenetur. Vitae nulla minima
+            exercitationem?
+          </p>
+        </div>
+        <div class="real-estate-img"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="get-started">
+        <div class="right-side">
+          <img
+            src="https://images.pexels.com/photos/3455361/pexels-photo-3455361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <div class="left-side">
+          <p class="left-side-title">
+            We can help you thrive with an luxurious beauitful home franchise in
+            your local area.
+          </p>
+          <p class="left-side-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+            obcaecati repellendus quod aspernatur laborum? Qui in laboriosam
+            unde iusto rerum quisquam alias minus eligendi voluptatum est.
+            Aperiam maiores quidem in.
+          </p>
+          <div class="left-side-icons">
+              <div class="icon-box1">
+                <i class="bi bi-arrow-left-right icons icon1"></i>
+                <p class="icon-text">Negotiating the buying</p>
+              </div>
+              <div class="icon-box2">
+                <i class="bi bi-tag icons icon2"></i>
+                <p class="icon-text">Pricing Your Home to Sell</p>
+              </div>
+              <div class="icon-box3">
+                <i class="bi bi-house icons icon3"></i>
+                <p class="icon-text">Tax advantages</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const navbar = document.querySelectorAll(".nav-link");
+
+      menu.addEventListener("click", openNav());
+
+      function openNav() {
+        // navbar.classList.toggle('show')
+        navbar.forEach((navbar) => navbar.classList.toggle("hide"));
+      }
+    </script>
+  </body>
+</html>
