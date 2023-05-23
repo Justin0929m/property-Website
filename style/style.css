@@ -16,7 +16,7 @@ body {
 
 /* Select CSS Reset */
 
-select {
+/* select {
   background-color: transparent;
   border: none;
   margin: 0;
@@ -24,7 +24,7 @@ select {
   z-index: 1;
   outline: none;
   color: #fff;
-}
+} */
 
 .gap {
   margin: 1rem 0;
@@ -41,7 +41,16 @@ img {
 
 button {
   padding: 0;
-  margin: 0;
+  /* margin: 0; */
+  background-color: #fbe6c9;
+  border: none;
+}
+
+/* Utility Classes */
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -127,7 +136,7 @@ header::after {
 
 /* Filter */
 
-.dropdown {
+/* .dropdown {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +150,9 @@ header::after {
 
 option {
   background: none;
-}
+} */
+
+/* Property Section */
 
 .property-section {
   display: grid;
@@ -159,6 +170,24 @@ option {
 .property-img {
   border-radius: 10px;
   height: 100%;
+  overflow: hidden;
+}
+
+.property-img-1,
+.property-img-2,
+.property-img-3,
+.property-img-4 {
+  transition: ease 250ms;
+  min-height: 100%;
+  filter: brightness(70%);
+}
+
+.property-img-1:hover,
+.property-img-2:hover,
+.property-img-3:hover,
+.property-img-4:hover {
+  transform: scale(1.1);
+  filter: none;
 }
 
 .property1,
@@ -179,7 +208,7 @@ option {
   font-weight: 500;
 }
 
-/* Details */
+/* Details Section*/
 
 .detail-section {
   display: grid;
@@ -208,11 +237,9 @@ option {
   grid-row: 2 / 3;
   grid-column: 1 / 7;
   max-width: 100%;
-  /* position: relative;
-  bottom: 15rem; */
 }
 
-/* Real Estate */
+/* Real Estate Section*/
 
 .real-estate {
   display: grid;
@@ -255,12 +282,13 @@ option {
   position: absolute;
 }
 
-/* Get Started */
+/* Get Started Section*/
 
 .get-started {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+  margin-bottom: 5rem;
 }
 
 .right-side img {
@@ -299,7 +327,97 @@ option {
   margin-top: 2rem;
   width: 10ch;
   text-align: center;
-  font-size: clamp(.4rem, 2.5vw, 1rem);
+  font-size: clamp(0.4rem, 2.5vw, 1rem);
+}
+
+/* Cities Section */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 10rem);
+  position: relative;
+  margin: 2rem;
+}
+
+.bg {
+  background-color: #fbe6c9;
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+}
+
+.bg-title,
+.bg-text {
+  margin-left: 2rem;
+}
+
+.bg-title {
+  margin-top: 2rem;
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+
+.bg-text {
+  color: gray;
+}
+
+.city-imgs {
+  display: flex;
+  position: absolute;
+  max-width: 75%;
+  gap: 1rem;
+  grid-row: 2 / 5;
+}
+
+.new-york {
+  position: relative;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.new-york p {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.italy {
+  position: relative;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.italy p {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.france {
+  position: relative;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.france p {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.england {
+  position: relative;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.england p {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
 /* Extra Small Phones */
@@ -357,7 +475,6 @@ option {
   }
 
   .real-estate-img {
-    /* display: none; */
     padding-top: 2rem;
     position: inherit;
     background-position: center 71%;
@@ -384,34 +501,51 @@ option {
     gap: 2rem;
     margin-bottom: 2rem;
   }
+
+  /* Cities Section */
+  .city-imgs {
+    flex-direction: column;
+    inset: 0;
+    margin: auto;
+  }
 }
 
 /* Small Devices */
 
-@media (width >= 600px) {
-  
+@media (width <= 600px) {
+  /* Cities Section */
+  .city-imgs {
+    flex-direction: column;
+    inset: 0;
+    margin: auto;
+  }
 }
 
 /* Medium Devices */
 
 @media (width <= 768px) {
-  
+   /* Cities Section */
+  .city-imgs {
+    flex-direction: column;
+    inset: 0;
+    margin: auto;
+  }
 }
 
 /* Large Devices */
 
 @media (width <= 992px) {
-  .get-started{
+  .get-started {
     display: flex;
     flex-wrap: wrap;
     margin: 2rem;
   }
 
-  .get-started > div{
+  .get-started > div {
     flex: 10rem;
   }
 
-  .right-side > img{
+  .right-side > img {
     margin: 0;
     max-width: 100%;
   }
@@ -420,17 +554,16 @@ option {
 /* Extra Large Devices */
 
 @media (width < 1440px) {
-  .detail-section{
+  .detail-section {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .detail-section > div{
+  .detail-section > div {
     flex: 10rem;
   }
 
-  .detail-title{
+  .detail-title {
     margin: 0;
   }
 }
-
