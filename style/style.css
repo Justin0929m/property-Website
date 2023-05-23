@@ -422,7 +422,7 @@ option {
 
 /* Extra Small Phones */
 
-@media (width <= 600px) {
+@media (width < 600px) {
   .navbar {
     flex-direction: column-reverse;
     align-items: start;
